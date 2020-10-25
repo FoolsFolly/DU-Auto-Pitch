@@ -1,0 +1,9 @@
+--Append the following at the end of start()
+
+PitchHelper = 0
+TargetAltitude = 0
+MouseDown = 0
+MouseX = 0
+MouseY = 0
+Screen.activate()
+unit.setTimer('RefreshScreen',0.5)
