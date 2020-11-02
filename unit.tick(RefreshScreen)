@@ -1,6 +1,8 @@
 --Under Unit, create a new tick filter with the value RefreshScreen.
 --Fill the new tick filter with the following content
 
+if pitchInput ~= 0 then PitchHelper = 0 end
+
 if ScreenUpdate == 1 and Screen.getMouseState() == 0 then
     ScreenUpdate = 0
     if PitchHelper == 1 and MouseX > 0.2 then 
