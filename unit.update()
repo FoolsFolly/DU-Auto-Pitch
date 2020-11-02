@@ -1,0 +1,9 @@
+--Append the following to the unit slot, update() filter
+
+
+--Screen Click Check
+if Screen.getMouseState() == 1 and ScreenUpdate == 0 then 
+    ScreenUpdate = 1
+    MouseX = Screen.getMouseX()
+    MouseY = Screen.getMouseY()
+end
