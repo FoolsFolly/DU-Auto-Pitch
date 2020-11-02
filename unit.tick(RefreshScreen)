@@ -1,20 +1,8 @@
 --Under Unit, create a new tick filter with the value RefreshScreen.
 --Fill the new tick filter with the following content
 
-if Screen.getMouseState() == 0 then
-	MouseDown = 0
-end
-if Screen.getMouseState() == 1 and MouseDown == 0 then
-     MouseDown = 1
-     MouseX = Screen.getMouseX()
-	MouseY = Screen.getMouseY()
-end
-    
-if pitchInput ~= 0 then
-     PitchHelper = 0
-end
-
-if MouseDown == 1 then
+if ScreenUpdate == 1 and Screen.getMouseState() == 0 then
+    ScreenUpdate = 0
     if PitchHelper == 1 and MouseX > 0.2 then 
         PitchHelper = 0
         elseif PitchHelper == 1 and MouseY < 0.2 then
@@ -31,7 +19,6 @@ if MouseDown == 1 then
         PitchHelper = 1
         TargetAltitude = math.floor(core.getAltitude())
         end
-        MouseDown = 2
 end
 
 if PitchHelper == 1 then
