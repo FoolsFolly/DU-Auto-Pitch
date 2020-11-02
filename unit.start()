@@ -2,7 +2,7 @@
 
 PitchHelper = 0
 TargetAltitude = 0
-MouseDown = 0
+ScreenUpdate = 0
 MouseX = 0
 MouseY = 0
 Screen.activate()
