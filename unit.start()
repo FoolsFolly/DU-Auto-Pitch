@@ -2,8 +2,4 @@
 
 PitchHelper = 0
 TargetAltitude = 0
-ScreenUpdate = 0
-MouseX = 0
-MouseY = 0
-Screen.activate()
-unit.setTimer('RefreshScreen',0.5)
+system.showScreen(1)
