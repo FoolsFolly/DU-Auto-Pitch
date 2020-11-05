@@ -1,0 +1,21 @@
+--Append the following to the system slot, update() filter
+
+
+--Pitch Control Display
+local HUD = ''
+if pitchInput ~= 0 then PitchHelper = 0 end
+if PitchHelper == 1 then
+    HUD = HUD..[[<div style="font-size:2vh;position:absolute;top:35%;left:3%;">
+    Alt+5: Altitude + 500<br>
+    Alt+4: Altitude + 50<br><br>
+    Target Altitude: ]].. TargetAltitude ..[[<br><br>
+    Alt+2: Altitude - 50<br>
+    Alt+1: Altitude - 500
+    </div>]]
+else
+   HUD = HUD..[[<div style="font-size:2vh;position:absolute;top:35%;left:5%;">
+   Alt+3: Enable Pitch Assist
+   </div>]]
+end
+    
+system.setScreen(HUD)
