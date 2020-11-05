@@ -1,0 +1,2 @@
+PitchHelper = 1
+TargetAltitude = math.floor(core.getAltitude() + 0.5)
