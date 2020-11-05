@@ -1,3 +1,0 @@
---Append the following to the end of stop()
-
-Screen.deactivate()
